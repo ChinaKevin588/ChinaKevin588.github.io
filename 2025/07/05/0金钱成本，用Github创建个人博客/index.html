@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en"><head>
+<title>0金钱成本，用Github创建个人博客 - Hexo</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="description" content="首先你需要下载以下应用1. Git用于同步以及部署 Hexo官网: 点这里进入  客户端下载:    Windows: 点击我下载  2. Node.js用于博客显示官网: 点这里进入 *安装过程无脑下一步即可接着我们需要安装Hexo1.创建文件夹在任意地点创建文件夹并命名为”Hexo”(双引号不输入) 2.用git安装Hexo在“Hexo”文件夹里右键选择”Open Git Bash here”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="0金钱成本，用Github创建个人博客">
+<meta property="og:url" content="http://example.com/2025/07/05/0%E9%87%91%E9%92%B1%E6%88%90%E6%9C%AC%EF%BC%8C%E7%94%A8Github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="首先你需要下载以下应用1. Git用于同步以及部署 Hexo官网: 点这里进入  客户端下载:    Windows: 点击我下载  2. Node.js用于博客显示官网: 点这里进入 *安装过程无脑下一步即可接着我们需要安装Hexo1.创建文件夹在任意地点创建文件夹并命名为”Hexo”(双引号不输入) 2.用git安装Hexo在“Hexo”文件夹里右键选择”Open Git Bash here”">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Hexo%E4%B8%BB%E9%A2%98%E5%9B%BE%E7%89%87.png">
+<meta property="og:image" content="http://example.com/Github%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="http://example.com/GitHub%E7%94%A8%E6%88%B7%E5%90%8D.png">
+<meta property="og:image" content="http://example.com/GitHub%E6%B7%BB%E5%8A%A0ssh%E5%AF%86%E9%92%A5.png">
+<meta property="og:image" content="http://example.com/GitHub%E4%BB%93%E5%BA%93%E7%9A%84ssh%E9%93%BE%E6%8E%A5.png">
+<meta property="og:image" content="http://example.com/%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.png">
+<meta property="article:published_time" content="2025-07-05T06:44:00.000Z">
+<meta property="article:modified_time" content="2025-07-05T07:59:20.749Z">
+<meta property="article:author" content="China Kevin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Hexo%E4%B8%BB%E9%A2%98%E5%9B%BE%E7%89%87.png">
+
+<link rel="stylesheet" href="/lib/fancybox/fancybox.css">
+<link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
+
+
+<link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1751702386137">
+
+<link rel="stylesheet" href="/css/style.css?v=1751702386137">
+
+
+
+
+    
+        <link rel="stylesheet" href="/custom.css?v=1751702386137">
+    
+
+
+
+<script src="/lib/mdui_043tiny/mdui.js" async></script>
+<script src="/lib/fancybox/fancybox.umd.js" async></script>
+<script src="/lib/lax.min.js" async></script>
+
+
+<script async src="/js/app.js?v=1751702386137"></script>
+
+ 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4D4ZJ9G024"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "G-4D4ZJ9G024");
+</script>
+
+
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+<meta name="generator" content="Hexo 7.3.0"></head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="China Kevin"><img src="https://raw.githubusercontent.com/ChinaKevin588/MY-webside-picture/refs/heads/main/my%20face.png" alt="China Kevin"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="China Kevin">
+            <img src="https://raw.githubusercontent.com/ChinaKevin588/MY-webside-picture/refs/heads/main/my%20face.png" alt="China Kevin" alt="China Kevin">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>3</div>
+        <div><span>Tags</span>0</div>
+        <div><span>Categories</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archive.html" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://nexmoe.com/donate.html" title="给我赞助">
+            <i class="mdui-list-item-icon nexmoefont icon-coffee"></i>
+            <div class="mdui-list-item-content">
+                给我赞助
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://i.nexmoe.com/" title="关于博主">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博主
+            </div>
+        </a>
+        
+    </div>
+    
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+         
+            <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+                <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            </form>
+         
+    </div>
+</div>
+
+
+
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+	<div class="nexmoe-widget nexmoe-social">
+		<a
+			class="mdui-ripple"
+			href="https://qm.qq.com/q/gmDzJEjviQE"
+			target="_blank"
+			mdui-tooltip="{content: 'QQ群'}"
+			style="
+				color: rgb(249, 174, 8);
+				background-color: rgba(249, 174, 8, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-QQ"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://space.bilibili.com/3493280473942849"
+			target="_blank"
+			mdui-tooltip="{content: '哔哩哔哩'}"
+			style="
+				color: rgb(231, 106, 141);
+				background-color: rgba(231, 106, 141, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-bilibili"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://github.com/ChinaKevin588"
+			target="_blank"
+			mdui-tooltip="{content: 'GitHub'}"
+			style="
+				color: rgb(25, 23, 23);
+				background-color: rgba(25, 23, 23, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-github"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://www.zhihu.com/people/chinakevin-2"
+			target="_blank"
+			mdui-tooltip="{content: '知乎'}"
+			style="
+				color: rgb(30, 136, 229);
+				background-color: rgba(30, 136, 229, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-zhihu"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://x.com/KevinChina588"
+			target="_blank"
+			mdui-tooltip="{content: 'Twitter'}"
+			style="
+				color: rgb(59, 151, 239);
+				background-color: rgba(59, 151, 239, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-twitter"
+			></i> </a
+		><a
+			class="mdui-ripple"
+			href="https://rss.com/podcasts/iamkevin/"
+			target="_blank"
+			mdui-tooltip="{content: 'RSS'}"
+			style="
+				color: rgb(247, 132, 34);
+				background-color: rgba(247, 132, 34, .1);
+			"
+		>
+			<i
+				class="nexmoefont icon-rss"
+			></i> </a
+		>
+	</div>
+</div>
+
+    
+        
+        
+
+    
+        
+        
+    
+        
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Archive</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+
+
+    
+        
+        
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Recent Posts</h3>
+    <div class="nexmoe-widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/07/05/0%E9%87%91%E9%92%B1%E6%88%90%E6%9C%AC%EF%BC%8C%E7%94%A8Github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">0金钱成本，用Github创建个人博客</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/04/About-me/">About me</a>
+          </li>
+        
+          <li>
+            <a href="/2025/07/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+        
+        <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-link">
+		<ul>
+        
+            <li>
+                <a href="https://nexmoe.com/" target="_blank" >
+                    <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="折影轻梦"></img>
+                    <p>折影轻梦</p>
+                </a>
+            </li>
+        
+		</ul>
+    </div>
+</div>
+<style>
+.nexmoe-widget-wrap .nexmoe-link ul li a {
+    text-align : center;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a img {
+    max-width : 100%;
+}
+.nexmoe-widget-wrap .nexmoe-link ul li a p {
+    margin: 10px 0;
+}
+</style>
+
+    
+   
+    <div class="nexmoe-copyright">
+        &copy; 2025 China Kevin
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://github.com/theme-nexmoe/hexo-theme-nexmoe" target="_blank">Nexmoe</a>
+        <br><a target="_blank" href="https://beian.miit.gov.cn/">鄂ICP备2020018486号</a>
+<br><a target="_blank" href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">
+<img src="https://i.dawnlab.me/c0268c1e6cfd0863d6ba35be1575941a.png" width="150px"></a>
+
+    </div>
+</div><!-- .nexmoe-drawer --></div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
+  <article>
+    
+        <div class="nexmoe-post-cover"> 
+            <img src="https://i.dawnlab.me/b5a7e61560facdd5b8aa9683fce147d7.png" alt="0金钱成本，用Github创建个人博客" loading="lazy">
+            <h1>0金钱成本，用Github创建个人博客</h1>
+        </div>
+    
+    
+    <div class="nexmoe-post-meta">
+    <div class="nexmoe-rainbow">
+        <a class="nexmoefont icon-calendar-fill">2025年07月05日</a>
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</div>
+
+    <h2 id="首先你需要下载以下应用"><a href="#首先你需要下载以下应用" class="headerlink" title="首先你需要下载以下应用"></a><strong>首先你需要下载以下应用</strong></h2><h3 id="1-Git"><a href="#1-Git" class="headerlink" title="1. Git"></a><strong>1. Git</strong></h3><p>用于同步以及部署 Hexo<br>官网: <a target="_blank" rel="noopener" href="https://git-scm.com/">点这里进入</a> </p>
+<p>客户端下载:  </p>
+<ul>
+<li>Windows: <a target="_blank" rel="noopener" href="https://git-scm.com/downloads/win">点击我下载</a></li>
+</ul>
+<h3 id="2-Node-js"><a href="#2-Node-js" class="headerlink" title="2. Node.js"></a><strong>2. Node.js</strong></h3><p>用于博客显示<br>官网: <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">点这里进入</a></p>
+<h2 id="安装过程无脑下一步即可"><a href="#安装过程无脑下一步即可" class="headerlink" title="*安装过程无脑下一步即可"></a>*安装过程无脑下一步即可</h2><h2 id="接着我们需要安装Hexo"><a href="#接着我们需要安装Hexo" class="headerlink" title="接着我们需要安装Hexo"></a><strong>接着我们需要安装Hexo</strong></h2><h3 id="1-创建文件夹"><a href="#1-创建文件夹" class="headerlink" title="1.创建文件夹"></a><strong>1.创建文件夹</strong></h3><p>在任意地点创建文件夹并命名为”Hexo”(双引号不输入)</p>
+<h3 id="2-用git安装Hexo"><a href="#2-用git安装Hexo" class="headerlink" title="2.用git安装Hexo"></a><strong>2.用git安装Hexo</strong></h3><p>在“Hexo”文件夹里右键选择”Open Git Bash here”</p>
+<p>在打开的命令行中依次输入下列代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br><span class="line">$ hexo init blog</span><br><span class="line">$ <span class="built_in">cd</span> blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="3-本地运行博客"><a href="#3-本地运行博客" class="headerlink" title="3.本地运行博客"></a><strong>3.本地运行博客</strong></h3><p>在hexo&#x2F;blog中右键选择”Open Git Bash here”</p>
+<p>在打开的命令行中输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>如果出现”INFO  Hexo is running at <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> . Press Ctrl+C to stop.”即表示本地运行成功</p>
+<p>在浏览器里输入<a target="_blank" rel="noopener" href="http://localhost:4000/%E6%9D%A5%E6%9F%A5%E7%9C%8B%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2">http://localhost:4000/来查看你的博客</a></p>
+<p>*”hexo s”全称是”hexo server”</p>
+<h3 id="4-美化博客"><a href="#4-美化博客" class="headerlink" title="4.美化博客"></a><strong>4.美化博客</strong></h3><p>打开Hexo的主题中心: <a target="_blank" rel="noopener" href="https://hexo.io/themes/">点这里进入</a><br><img onerror="imgOnError(this);" data-fancybox="gallery" src="/Hexo%E4%B8%BB%E9%A2%98%E5%9B%BE%E7%89%87.png" alt="hexo主题图片" data-caption="hexo主题图片" loading="lazy"></p>
+<p>找到你喜欢的主题，点击进入跳转到Github，在描述栏中查看应用的代码，<br>在hexo&#x2F;blog目录右键选择”Open Git Bash here”，<br>在弹出的命令行中把代码粘贴并回车运行</p>
+<p>代码运行完成后，在hexo&#x2F;blog目录找到”_config.yml”<br>用记事本或其它应用打开，找到theme，在冒号后面的主题名称改成hexo\blog\themes中你安装的主题文件夹的名称</p>
+<p>上述代码运行完成后，在hexo&#x2F;blog目录右键选择”Open Git Bash here”<br>在打开的命令行中依次输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<p>再在浏览器中输入<a target="_blank" rel="noopener" href="http://localhost:4000/%E6%9D%A5%E6%9F%A5%E7%9C%8B%E4%BD%A0%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%BB%E9%A2%98%E6%9C%89%E6%B2%A1%E6%9C%89%E4%BF%AE%E6%94%B9%E5%AE%8C%E6%88%90">http://localhost:4000/来查看你的博客的主题有没有修改完成</a></p>
+<h3 id="5-创建Github仓库"><a href="#5-创建Github仓库" class="headerlink" title="5.创建Github仓库"></a><strong>5.创建Github仓库</strong></h3><p>登录Github<a target="_blank" rel="noopener" href="https://github.com/">点这里进入</a></p>
+<p>创建新仓库，把仓库名称改为”你的用户名.github.io”<br>接着无脑下一步</p>
+<p>直到出现下面的页面<br><img onerror="imgOnError(this);" data-fancybox="gallery" src="/Github%E4%BB%93%E5%BA%93.png" alt="Github仓库" data-caption="Github仓库" loading="lazy"></p>
+<h3 id="6-用git给自己一个身份标识获取ssh密钥"><a href="#6-用git给自己一个身份标识获取ssh密钥" class="headerlink" title="6.用git给自己一个身份标识获取ssh密钥"></a><strong>6.用git给自己一个身份标识获取ssh密钥</strong></h3><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="/GitHub%E7%94%A8%E6%88%B7%E5%90%8D.png" alt="GitHub用户名" data-caption="GitHub用户名" loading="lazy"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;你Github的用户名&quot;</span></span><br><span class="line"></span><br><span class="line">$ git config --global user.email <span class="string">&quot;你用于GitHub注册的邮箱&quot;</span></span><br><span class="line"></span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">&quot;你用于GitHub注册的邮箱&quot;</span></span><br><span class="line"></span><br><span class="line">$ <span class="built_in">cat</span> ~/.ssh/id_rsa.pub</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>出现好几行看似乱码的密钥即表示成功</p>
+<h3 id="7-把git的ssh密钥复制到GitHub中"><a href="#7-把git的ssh密钥复制到GitHub中" class="headerlink" title="7.把git的ssh密钥复制到GitHub中"></a><strong>7.把git的ssh密钥复制到GitHub中</strong></h3><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="/GitHub%E6%B7%BB%E5%8A%A0ssh%E5%AF%86%E9%92%A5.png" alt="GitHub添加ssh密钥" data-caption="GitHub添加ssh密钥" loading="lazy"></p>
+<h3 id="8-把本地代码推送到GitHub上"><a href="#8-把本地代码推送到GitHub上" class="headerlink" title="8.把本地代码推送到GitHub上"></a><strong>8.把本地代码推送到GitHub上</strong></h3><p>在hexo&#x2F;blog目录找到”_config.yml”<br>找到末尾<br>把最后几行代码改成这样</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ deploy:</span><br><span class="line">$  <span class="built_in">type</span>: <span class="string">&#x27;git&#x27;</span></span><br><span class="line">$  repository: 你GitHub仓库的ssh链接</span><br></pre></td></tr></table></figure>
+<p><img onerror="imgOnError(this);" data-fancybox="gallery" src="/GitHub%E4%BB%93%E5%BA%93%E7%9A%84ssh%E9%93%BE%E6%8E%A5.png" alt="GitHub仓库的ssh链接" data-caption="GitHub仓库的ssh链接" loading="lazy"></p>
+<p>在hexo&#x2F;blog目录右键选择”Open Git Bash here”<br>在打开的命令行中依次输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<p>等待代码运行完成</p>
+<h3 id="6-创建Github-Pages"><a href="#6-创建Github-Pages" class="headerlink" title="6.创建Github Pages"></a><strong>6.创建Github Pages</strong></h3><p>![GitHub Pages图片1](GitHub Pages图片1.png)</p>
+<p>![GitHub Pages图片2](GitHub Pages图片2.png)</p>
+<p>![GitHub Pages图片3](GitHub Pages图片3.png)</p>
+<p>![GitHub Pages图片4](GitHub Pages图片4.png)</p>
+<p>![GitHub Pages图片5](GitHub Pages图片5.png)</p>
+<h3 id="6-修改网站"><a href="#6-修改网站" class="headerlink" title="6.修改网站"></a><strong>6.修改网站</strong></h3><p>![GitHub Pages图片5](GitHub Pages图片5.png)</p>
+<p>每次修改了网站要在hexo&#x2F;blog目录右键选择”Open Git Bash here”<br>在打开的命令行中依次输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<h3 id="现在你已经有你的网站了，快去试试吧"><a href="#现在你已经有你的网站了，快去试试吧" class="headerlink" title="现在你已经有你的网站了，快去试试吧"></a><strong>现在你已经有你的网站了，快去试试吧</strong></h3><p>如果你想要把你的域名绑定到你的博客，可以如下图所示<br><img onerror="imgOnError(this);" data-fancybox="gallery" src="/%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D.png" alt="绑定域名" data-caption="绑定域名" loading="lazy"><br>如果你没有域名但想拥有你的专属域名，可以看一下我下一篇文章</p>
+<h3 id="尽请期待"><a href="#尽请期待" class="headerlink" title="尽请期待"></a><strong>尽请期待</strong></h3>
+    <p><img src="https://i.dawnlab.me/53a8c7cf3ad77a0f0a456ce2c6afe88a.png" loading="lazy"></p>
+
+  </article>
+
+  
+      
+    <div class="nexmoe-post-copyright">
+        <strong>Author：</strong>China Kevin<br>
+        <strong>Link：</strong><a href="http://example.com/2025/07/05/0%E9%87%91%E9%92%B1%E6%88%90%E6%9C%AC%EF%BC%8C%E7%94%A8Github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="http:&#x2F;&#x2F;example.com&#x2F;2025&#x2F;07&#x2F;05&#x2F;0%E9%87%91%E9%92%B1%E6%88%90%E6%9C%AC%EF%BC%8C%E7%94%A8Github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;example.com&#x2F;2025&#x2F;07&#x2F;05&#x2F;0%E9%87%91%E9%92%B1%E6%88%90%E6%9C%AC%EF%BC%8C%E7%94%A8Github%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2&#x2F;</a><br>
+        
+            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+        
+    </div>
+
+
+  
+  
+  <div class="nexmoe-post-meta nexmoe-rainbow">
+   
+    
+</div>
+  
+  
+    <script async src="/js/copy-codeblock.js?v=1751702386126"></script>
+  
+
+  
+      <div class="nexmoe-post-footer">
+          请在你的配置文件中设置 slotComment
+
+      </div>
+  
+</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+        <div class="nexmoe-tool">
+
+            
+
+            
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-i-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E5%85%88%E4%BD%A0%E9%9C%80%E8%A6%81%E4%B8%8B%E8%BD%BD%E4%BB%A5%E4%B8%8B%E5%BA%94%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">首先你需要下载以下应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Git"><span class="toc-number">1.1.</span> <span class="toc-text">1. Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Node-js"><span class="toc-number">1.2.</span> <span class="toc-text">2. Node.js</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%E6%97%A0%E8%84%91%E4%B8%8B%E4%B8%80%E6%AD%A5%E5%8D%B3%E5%8F%AF"><span class="toc-number">2.</span> <span class="toc-text">*安装过程无脑下一步即可</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A5%E7%9D%80%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E5%AE%89%E8%A3%85Hexo"><span class="toc-number">3.</span> <span class="toc-text">接着我们需要安装Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">3.1.</span> <span class="toc-text">1.创建文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%94%A8git%E5%AE%89%E8%A3%85Hexo"><span class="toc-number">3.2.</span> <span class="toc-text">2.用git安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%9C%AC%E5%9C%B0%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2"><span class="toc-number">3.3.</span> <span class="toc-text">3.本地运行博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%BE%8E%E5%8C%96%E5%8D%9A%E5%AE%A2"><span class="toc-number">3.4.</span> <span class="toc-text">4.美化博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%88%9B%E5%BB%BAGithub%E4%BB%93%E5%BA%93"><span class="toc-number">3.5.</span> <span class="toc-text">5.创建Github仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E7%94%A8git%E7%BB%99%E8%87%AA%E5%B7%B1%E4%B8%80%E4%B8%AA%E8%BA%AB%E4%BB%BD%E6%A0%87%E8%AF%86%E8%8E%B7%E5%8F%96ssh%E5%AF%86%E9%92%A5"><span class="toc-number">3.6.</span> <span class="toc-text">6.用git给自己一个身份标识获取ssh密钥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%8A%8Agit%E7%9A%84ssh%E5%AF%86%E9%92%A5%E5%A4%8D%E5%88%B6%E5%88%B0GitHub%E4%B8%AD"><span class="toc-number">3.7.</span> <span class="toc-text">7.把git的ssh密钥复制到GitHub中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E6%8A%8A%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%A0%81%E6%8E%A8%E9%80%81%E5%88%B0GitHub%E4%B8%8A"><span class="toc-number">3.8.</span> <span class="toc-text">8.把本地代码推送到GitHub上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E5%88%9B%E5%BB%BAGithub-Pages"><span class="toc-number">3.9.</span> <span class="toc-text">6.创建Github Pages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E4%BF%AE%E6%94%B9%E7%BD%91%E7%AB%99"><span class="toc-number">3.10.</span> <span class="toc-text">6.修改网站</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%B0%E5%9C%A8%E4%BD%A0%E5%B7%B2%E7%BB%8F%E6%9C%89%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99%E4%BA%86%EF%BC%8C%E5%BF%AB%E5%8E%BB%E8%AF%95%E8%AF%95%E5%90%A7"><span class="toc-number">3.11.</span> <span class="toc-text">现在你已经有你的网站了，快去试试吧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%BD%E8%AF%B7%E6%9C%9F%E5%BE%85"><span class="toc-number">3.12.</span> <span class="toc-text">尽请期待</span></a></li></ol></li></ol>
+                </div>
+            </button>
+            
+
+            
+
+            <a href="#nexmoe-content" class="backtop toc-link" aria-label="Back To Top" title="top"><button class="mdui-fab mdui-ripple"><i class="nexmoefont icon-caret-top"></i></button></a>
+        </div>
+    </div>
+</div></div><div id="nexmoe-footer"><!--!--></div><div id="nexmoe-search-space"><div class="search-container"><div class="search-header"><div class="search-input-container"><input class="search-input" type="text" placeholder="Search" onInput="sinput();"></div><a class="search-close" onclick="sclose();">×</a></div><div class="search-body"></div></div></div><div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2058306854838448" crossorigin="anonymous"></script>
+</div></body></html>
